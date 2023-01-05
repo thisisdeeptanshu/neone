@@ -14,6 +14,10 @@ app.get("/matches/:matchtype/:matchnumber", (req, res) => {
     res.sendFile(path.join(__dirname, "public/matches.html"))
 })
 
+app.get("/match-type-graphs/:matchtype", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/match-graphs.html"))
+})
+
 app.listen(port, "192.168.0.129", () => {
     console.log(`Example app listening on port ${port}`);
 });

@@ -12,6 +12,7 @@ matchTypes.forEach(mt => {
     let h1 = document.createElement("h1");
     h1.innerText = mt;
     h1.setAttribute("class", "underline");
+    h1.onclick = function() {window.location.href = `/match-type-graphs/${mt}`}
     cDiv.appendChild(h1);
     document.getElementById("all-matches").appendChild(cDiv);
     let div = document.createElement("div");

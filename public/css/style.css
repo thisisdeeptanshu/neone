@@ -215,6 +215,69 @@ button:hover .button__inner::after {
 }
 /* LINES!!! */
 
+/* DROPDOWN CHECK LISTS!!! */
+.dropdown-check-list {
+    display: inline-block;
+    margin-left: 10px;
+}
+  
+.dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    background-color: #ece8e1;
+    color: #0f1923;
+    border-radius: 5px;
+    width: 120px;
+}
+  
+.dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+  
+.dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+}
+  
+.dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    background-color: #ece8e1;
+    border-top: none;
+    color: #0f1923;
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+  
+.dropdown-check-list ul.items li {
+    list-style: none;
+}
+  
+.dropdown-check-list.visible .anchor {
+    border-radius: 0;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
+  
+.dropdown-check-list.visible .items {
+    display: block;
+}
+/* DROPDOWN CHECK LISTS!!! */
+
 #date {
     position: absolute;
     color: #ece8e1;

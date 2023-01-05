@@ -1,0 +1,22 @@
+<body style="overflow: hidden;">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script defer src="../js/dropdownchecklist.js"></script>
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+    <script src="../js/match-graphs.js" type="module"></script>
+    <div id="date"></div>
+    <br>
+    <div id="container" style="display: flex; justify-content: center;"></div>
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Data</span>
+        <ul class="items">
+            <li><input id="1" type="checkbox" checked />Kills</li>
+            <li><input id="2" type="checkbox" checked />Deaths</li>
+            <li><input id="3" type="checkbox" checked />Assists</li>
+            <li><input id="4" type="checkbox" />Avg. Combat Score</li>
+            <li><input id="5" type="checkbox" />Econ Rating</li>
+            <li><input id="6" type="checkbox" />Kills per Round</li>
+            <li><input id="7" type="checkbox" />Damage per Second</li>
+        </ul>
+    </div>
+    <div id="frost-chart"></div>
+</body>
