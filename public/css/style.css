@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body {
+    background-color: #0f1923;
+    font-family: "Merriweather";
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: #ece8e1;
+    text-align: center;
+}
+h2 {
+    color: #ece8e1;
+    font-weight: lighter;
+}
+.matchbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+table {
+    color: #ece8e1;
+    text-align: center;
+}
+
+/* BUTTON!!! */
+button, table {
+    font-family: "Merriweather";
+    margin: 0 25px;
+
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--button-text-color);
+    /* Clean style */
+    
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: #7D8082;
+    --button-background-color: #ece8e1;
+    --highlight-color: #ff4655;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+    
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all .15s ease;
+}
+button {
+    cursor: pointer;
+}
+  
+button::before,
+button::after,
+table::before,
+table::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+}
+  
+button::before, table::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+  
+button::after, table::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+  
+button:active,
+button:focus {
+    outline: none;
+}
+  
+button:active::before,
+button:active::after {
+    right: 3px;
+    left: 3px;
+}
+  
+button:active::before {
+    top: 3px;
+}
+  
+button:active::after {
+    bottom: 3px;
+}
+  
+.button__inner {
+    position: relative;
+    display: block;
+    padding: 20px 30px;
+    background-color: var(--button-background-color);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+  
+.button__inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--button-bits-color);
+}
+  
+.button__inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--button-bits-color);
+    transition: all .2s ease;
+}
+  
+.button__slide {
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+.button__slide2 {
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0;
+    background-color: #0fa88e;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+  
+.button__content {
+    position: relative;
+}
+  
+button:hover {
+    color: var(--button-text-color-hover);
+}
+  
+button:hover .button__slide, button:hover .button__slide2 {
+    width: calc(100% + 15px);
+}
+  
+button:hover .button__inner::after {
+    background-color: var(--button-bits-color-hover);
+}
+  
+.button--light {
+    --button-background-color: var(--background-color);
+    --button-text-color: var(--highlight-color);
+    --button-inner-border-color: var(--highlight-color);
+    --button-text-color-hover: #ece8e1;
+    --button-bits-color-hover: #ece8e1;
+}
+/* BUTTON!!! */
+
+/* LINES!!! */
+.line-container {
+    padding: 10px 100px;
+}
+.lines {
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+.lines::after, .lines::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    width: 45%;
+    height: 25%;
+}
+.lines::after {
+    left: 0;
+    top: 200%;
+}
+.lines::before {
+    top: 200%;
+    right: 0;
+}
+.diamond {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ff4655;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+/* LINES!!! */
+
+#date {
+    position: absolute;
+    color: #ece8e1;
+    padding: 0px 10px;
+    border-bottom: 1px solid #ece8e1;
+}
+#date p {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.underline {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+.underline::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.underline:hover::after {
+    width: 100%; 
+    left: 0; 
+}

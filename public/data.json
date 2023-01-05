@@ -1,0 +1,63 @@
+{
+    "match-types": [
+        "Swift Play"
+    ],
+    "Swift Play": {
+        "total-matches": 5,
+        "match-1": {
+            "date": "4th January, 2023",
+            "result": "5-1",
+            "K-D-A": [4, 3, 1],
+            "max-K-D-A": [12, 1, 1],
+            "avg-combat-score": 199,
+            "econ-rating": 59,
+            "played-as": "Jett",
+            "kills-per-round": 0.7,
+            "damage-per-round": 119
+        },
+        "match-2": {
+            "date": "4th January, 2023",
+            "result": "1-5",
+            "K-D-A": [3, 5, 1],
+            "max-K-D-A": [12, 4, 1],
+            "avg-combat-score": 135,
+            "econ-rating": 35,
+            "played-as": "Jett",
+            "kills-per-round": 0.5,
+            "damage-per-round": 88
+        },
+        "match-3": {
+            "date": "4th January, 2023",
+            "result": "5-2",
+            "K-D-A": [6, 3, 2],
+            "max-K-D-A": [12, 4, 4],
+            "avg-combat-score": 223,
+            "econ-rating": 63,
+            "played-as": "Jett",
+            "kills-per-round": 0.9,
+            "damage-per-round": 127
+        },
+        "match-4": {
+            "date": "4th January, 2023",
+            "result": "5-1",
+            "K-D-A": [3, 4, 0],
+            "max-K-D-A": [9, 2, 0],
+            "avg-combat-score": 86,
+            "econ-rating": 22,
+            "played-as": "Jett",
+            "kills-per-round": 0.5,
+            "damage-per-round": 44
+        },
+        "match-5": {
+            "date": "4th January, 2023",
+            "result": "5-0",
+            "K-D-A": [6, 2, 0],
+            "max-K-D-A": [10, 0, 3],
+            "avg-combat-score": 248,
+            "econ-rating": 131,
+            "played-as": "Neon",
+            "kills-per-round": 1.2,
+            "damage-per-round": 131
+        }
+    }
+}
